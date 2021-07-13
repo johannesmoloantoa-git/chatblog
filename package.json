@@ -1,5 +1,5 @@
 {
-  "name": "chatcord",
+  "name": "loveland",
   "version": "1.0.0",
   "description": "Realtime chat app with rooms",
   "main": "server.js",
@@ -7,11 +7,12 @@
     "start": "node server",
     "dev": "nodemon server"
   },
-  "author": "Brad Traversy",
+  "author": "Johannes Moloantoa",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
     "moment": "^2.24.0",
+    "mongoose": "^5.13.2",
     "socket.io": "^2.4.0"
   },
   "devDependencies": {
