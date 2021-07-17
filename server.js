@@ -4,6 +4,14 @@ const express = require('express');
 const socketio = require('socket.io');
 const formatMessage = require('./utils/messages');
 const mongoose = require ('mongoose');
+
+//Creating DB
+mongoose.connect('mongodb://localhost:27017/chatdb', {useNewUrlParser:true, useUnifiedTopology:true}) //connecting to mongo db
+  .then(()=> {console.log('You are connected to Database');})
+  .catch((error)=>{console.log(error);})
+
+
+
 const {
   userJoin,
   getCurrentUser,
